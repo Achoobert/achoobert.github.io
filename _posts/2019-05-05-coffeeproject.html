@@ -1,0 +1,61 @@
+---
+title: Coffee Roaster Script
+layout: post
+---
+
+<!-- Blockquote -->
+<h2>Blockquote</h2>
+<blockquote>
+  Silaa Farms is a socially responsible company located in North Thailand that
+  partners with smallholder farmers to produce premium quality organic Arabica
+  coffee.
+</blockquote>
+
+<h3>Left &amp; Right</h3>
+<p>
+  <span class="image left"
+    ><img src="{{ 'assets/images/coffee1.jpg' | relative_url }}" alt="" /></span
+  >The core values of Silaa Farms are quality and consistency. They have made it
+  a priority to build quality control checks into every stage of their
+  production process, and have trained their employees to understand and
+  thoroughly perform each check.<br />
+  Maintaining consistency in the coffee roasting stage was one quality control
+  area Silaa Coffee wanted to improve. Located in a backwater village in
+  northern Thailand, the 500kg roaster collects sensor and spin data while
+  roasting, and stores it locally. This data can be downloaded directly by
+  accessing the IP of the roaster and viewing an HTTP interface. Currently, an
+  expert visits the village every week or so and downloads the data from the
+  coffee roaster onto a laptop and then takes it away to analyze. However,
+  visiting so frequently was becoming burdensome, and they wanted to have a
+  local employee be able to pull the data from the roaster and put it online for
+  the expert to analyze.
+</p>
+<p>
+  <span class="image right"
+    ><img src="{{ 'assets/images/coffee2.jpg' | relative_url }}" alt="" /></span
+  >The goal for us was to create a simple, hopefully, automated
+  solution--ideally one which was very easy and simple to use--to upload data
+  about all the roasts from the coffee roaster to Google Drive so they can be
+  quickly looked at for reference and quality control. This challenge was dubbed
+  #InternetOfBeans.<br />
+
+  During the Hackathon, our team tackled this problem. Rather than requiring a
+  laptop and heavy manual processing, the approach taken was to invest in a
+  Raspberry Pi and give it a button and LED. The roaster presses the button just
+  before it turns itself off. The LED lights up for at least two seconds, during
+  which the data is pulled from the roaster and uploaded to the internet. Once
+  the data is safely transferred, the LED is extinguished and the roaster can
+  turn off the machine. This way the data is synced to Google Drive and can be
+  accessed remotely anytime.<br />
+
+  Now, the software component of the project has been implemented and is working
+  well. It is saving roast information that was getting lost after a certain
+  number of days, dividing up the day's data into individual roasts, and
+  converting that information into usable data. With the data being synced to
+  Google drive automatically, it can be accessed remotely with one click and
+  easily analyzed to get a good feel for the consistency of the roasts. This all
+  ensures that the coffee continues to be the high-quality product that Silaa
+  Farms is known for.
+</p>
+
+<hr />
