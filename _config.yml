@@ -36,7 +36,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is my personal homepage for hosting my game listings, blog
   and to provide access to my resume and portfolio.
 author: Isaac Schubert
-avatar: assets/images/avatar.jpg
+avatar: assets/images/avatar.webp
 email: its@secret
 
 # You'll want to customize url and baseurl for your own site:

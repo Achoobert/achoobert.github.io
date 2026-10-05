@@ -7,22 +7,10 @@ order: 2
 <div class="row">
   <div class="item">
     <a
-      href="http://isaacschubert.com/2023/01/13/changeownmind.html"
-      class="image fit"
-      ><img
-        src="{{ 'assets/images/humanscript.png' | relative_url }}"
-        alt="Change My Own Mind: An Affordable Shortcut to Personal Growth"
-    /></a>
-    <header>
-      <h3>A hypnosis script helper built on chatGPT</h3>
-    </header>
-  </div>
-  <div class="item">
-    <a
       href="http://isaacschubert.com/2019/05/05/coffeeproject.html"
       class="image fit"
       ><img
-        src="{{ 'assets/images/coffee.jpg' | relative_url }}"
+        src="{{ 'assets/images/coffee.webp' | relative_url }}"
         alt="Coffee Roaster Project"
     /></a>
     <header>
@@ -34,21 +22,19 @@ order: 2
       href="http://isaacschubert.com/2020/05/29/audioproject.html"
       class="image fit"
       ><img
-        src="{{ 'assets/images/speaker.jpg' | relative_url }}"
+        src="{{ 'assets/images/speaker.webp' | relative_url }}"
         alt="fresh listens"
     /></a>
     <header>
       <h3>Python Library</h3>
     </header>
   </div>
-  {%- assign _portfolio_posts = site.posts | where: "portfolio", true | sort: "date" | reverse -%}
-  {%- for _post in _portfolio_posts -%}
+  {%- assign _portfolio_posts = site.posts | where: "portfolio", true | sort:
+  "date" | reverse -%} {%- for _post in _portfolio_posts -%}
   <div class="item">
     {%- if _post.thumbnail -%}
     <a href="{{ _post.url | relative_url }}" class="image fit"
-      ><img
-        src="{{ _post.thumbnail | relative_url }}"
-        alt="{{ _post.title }}"
+      ><img src="{{ _post.thumbnail | relative_url }}" alt="{{ _post.title }}"
     /></a>
     {%- endif -%}
     <header>
