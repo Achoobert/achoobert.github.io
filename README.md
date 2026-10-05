@@ -1,7 +1,6 @@
 ## The github repo for my portfolio site
 
-This is a semi-placeholder until I get a more 'professional' hosting setup.
-however, a github hosted page seems to be good enough for now while I'm busy with more pressing projects :)
+A github hosted page does the job great!
 
 ### Contact
 

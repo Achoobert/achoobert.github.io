@@ -41,4 +41,22 @@ order: 2
       <h3>Python Library</h3>
     </header>
   </div>
+  {%- assign _portfolio_posts = site.posts | where: "portfolio", true | sort: "date" | reverse -%}
+  {%- for _post in _portfolio_posts -%}
+  <div class="item">
+    {%- if _post.thumbnail -%}
+    <a href="{{ _post.url | relative_url }}" class="image fit"
+      ><img
+        src="{{ _post.thumbnail | relative_url }}"
+        alt="{{ _post.title }}"
+    /></a>
+    {%- endif -%}
+    <header>
+      <h3><a href="{{ _post.url | relative_url }}">{{ _post.title }}</a></h3>
+      {%- if _post.excerpt and _post.thumbnail == nil -%}
+      <p>{{ _post.excerpt | strip_html | truncatewords: 20 }}</p>
+      {%- endif -%}
+    </header>
+  </div>
+  {%- endfor -%}
 </div>
